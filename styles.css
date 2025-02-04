@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* tipografia */
+    --fuente: "Inknut Antiqua", serif;
+    /* colores */
+    --violeta: #6964E2;
+    --azul: #102B3E;
+    --gris: #CED8E1;
+    --negro: #000;
+    --blanco: #FFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.conteiner {
+    width: 1200px;
+    margin: 0 auto;
+}
+img {
+    height: auto;
+}
+body {
+    background-color: var(--blanco);
+    font-family: var(--fuente);
+}
+section {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+p {
+    line-height: 25px;
+    /*espaciado entre parrafos */
+}
+
+.logoWeb {
+    width: auto;
+    height: 60px;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+nav ul li {
+    padding: 5px 15px;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+}
+nav ul li a:hover {
+    border: solid var(--violeta) 2px;
+    border-radius: 20px;
+}
+.activoNav {
+    border: solid var(--violeta) 2px;
+    border-radius: 20px;
+    background-color: #908edf;
+}
+.activoNav:hover {
+    border: solid var(--violeta) 2px;
+    border-radius: 20px;
+    background-color: var(--blanco);
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+}
+#hero {
+    background-image: url("img/hero1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /*  altura img */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+}
+#hero h1,
+#hero p {
+    text-align: center;
+}
+.hero div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: var(--blanco);
+}
+.hero p {
+    color: var(--blanco);
+    text-align: justify;
+}
+#entradas h2 {
+    color: var(--negro);
+    text-align: center;
+}
+.cardFigure {
+    position: relative;
+}
+
+
+.cardFigure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+ /*NOTICIAS*/
+
+#noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+#noticias a {
+    margin-bottom: 20px;
+    border: solid var(--violeta) 2px;
+    border-radius: 20px;
+    padding: 0px 5px 0px 5px;
+    margin-top: 15px;
+}
+#noticias h2 {
+    color: var(--negro);
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+#noticias a:hover {
+    border: solid var(--violeta) 2px;
+    border-radius: 20px;
+    background-color: var(--violeta);
+    color: var(--blanco);
+}
+#noticias .cardFigure img {
+    width: 360px;
+    height: 250px;
+    object-fit: cover;
+}
+.artNoticias {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#grilla {
+    background-color: var(--azul);
+    color: var(--blanco);
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+}
+#grilla h4,
+#grilla h3,
+#grilla h2,
+#grilla p {
+    text-align: center;
+}
+#grilla h2 {
+    width: 100%;
+}
+#grilla img {
+    border-radius: 80px 0px 80px 0px;
+    border: solid var(--blanco) 1px;
+    height: 200px;
+}
+#grilla article {
+    width: 50%;
+    gap: 30px;
+}
+.articleGrilla {
+    display: flex;
+}
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+table tr {
+    padding: 10px;
+}
+table tr:hover{
+    background-color: #6964E2;
+} 
+table tr td {
+    border: var(--blanco) solid 1px;
+}
+#entradas {
+    color: var(--negro);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#entradas h2 {
+    width: 100%;
+    text-align: center;
+}
+#entradas .cardFigure img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+#entradas h4,
+#entradas h3,
+#entradas h2,
+#entradas p {
+    text-align: center;
+}
+.divEntradasArt {
+    width: 600px;
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+.imgEntradas img {
+    width: 600px;
+    height: auto
+}
+.entradasArt ul {
+    margin-bottom: 30px;
+    /* separa el boton */
+}
+.entradasArt a {
+    border-radius: 20px;
+    background-color: var(--violeta);
+    padding: 0px 10px;
+    color: var(--blanco);
+}
+.entradasArt a:hover {
+    border-radius: 20px;
+    padding: 0px 10px;
+    color: var(--negro);
+    border: 2px solid var(--violeta);
+    background-color: var(--blanco);
+}
+figure {
+    padding: 10px;
+}
+/* FORM */
+#form {
+    background-color: var(--azul);
+    color: var(--blanco);
+    text-align: center;
+}
+.divForm {
+    width: 800px;
+    margin: 0px auto;
+}
+input[type="text"],
+input[type="email"],
+select {
+    height: 35px;
+    width: 100%;
+    padding: 7px;
+}
+label {
+    width: 100%;
+    display: block;
+}
+.labelInput {
+    flex-direction: column;
+    width: 100%;
+}
+input[type="submit"] {
+    width: 100%;
+    height: 35px;
+    font-family: var(--fuente);
+    background-color: var(--blanco);
+}
+input[type="submit"]:hover {
+    background-color: var(--violeta);
+    color: var(--blanco);
+}
+.inputForm {
+    flex-direction: row;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+form input :focus {
+    box-shadow: 2px 2px 15px var(--negro);
+}
+footer {
+    padding: 20px;
+}
+footer p {
+    text-align: center;
+}
+/* GALERIA */
+#galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-template-rows: auto repeat(4, 150px);
+    grid-template-areas: "titulo titulo titulo titulo"
+        "uno uno dos tres"
+        "cuatro cuatro dos tres"
+        "cuatro cuatro dos cinco"
+        "cuatro cuatro dos cinco";
+}
+.galeria figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#title {
+    grid-area: titulo;
+    text-align: center;
+}
+#fotoUno {
+    grid-area: uno;
+}
+#fotoDos {
+    grid-area: dos;
+}
+#fotoTres {
+    grid-area: tres;
+}
+#fotoCuatro {
+    grid-area: cuatro;
+}
+#fotoCinco {
+    grid-area: cinco;
+}
+td {
+    text-align: center;
+}
+span {
+    color: var(--blanco);
+    background-color: var(--violeta);
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 20px;
+    padding: 0px 5px 0px 5px;
+    font-family: var(--fuente);
+}
+
+.alinear {
+    text-align: left;
+    padding-left: 10px;
+}
+
+li {
+    font-family: var(--fuente);
+}
